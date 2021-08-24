@@ -11,6 +11,7 @@ public class Task1 {
         }
         System.out.println();
     }
+
     private static ArrayList<Integer> createIntArray(int length){
         Random rnd = new Random();
         ArrayList<Integer> arr = new ArrayList<>(length);
