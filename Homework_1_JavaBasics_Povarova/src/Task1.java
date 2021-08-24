@@ -21,6 +21,19 @@ public class Task1 {
         return arr;
     }
 
+    //Сортировка целочисленного массива методом пузырька
+    private static void bubbleSort(ArrayList<Integer> arr){
+        for(int i=0; i < arr.size(); i++) {
+            for (int j = arr.size() - 1; j > i; j--) {
+                if (arr.get(j - 1) > arr.get(j)) {
+                    int temp = arr.get(j - 1);
+                    arr.set(j - 1, arr.get(j));
+                    arr.set(j, temp);
+                }
+            }
+        }
+    }
+
     public static void main(String[] args){
         //Сортировка пузырьком
         ArrayList<Integer> a1 = createIntArray(7);
