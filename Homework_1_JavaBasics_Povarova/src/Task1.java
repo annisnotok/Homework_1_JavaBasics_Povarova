@@ -5,7 +5,6 @@ public class Task1 {
 
     private static void printArray(ArrayList<Integer> array)
     {
-
         for(int arr:array)
         {
             System.out.println(arr + " ");
